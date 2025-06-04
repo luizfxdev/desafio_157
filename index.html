@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labirinto Pokémon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Labirinto Pokémon</h1>
+      <p class="subtitle">Encontre o caminho para o Pokémon Lendário!</p>
+
+      <div class="input-section">
+        <div class="matrix-input">
+          <label for="row1">Matriz 1 (primeira linha):</label>
+          <input type="text" id="row1" placeholder="Ex: 5 4 3 11" class="matrix-row" />
+        </div>
+        <div class="matrix-input">
+          <label for="row2">Matriz 2 (segunda linha):</label>
+          <input type="text" id="row2" placeholder="Ex: 2 6 5 3" class="matrix-row" />
+        </div>
+        <div class="matrix-input">
+          <label for="row3">Matriz 3 (terceira linha):</label>
+          <input type="text" id="row3" placeholder="Ex: 9 7 8 5" class="matrix-row" />
+        </div>
+      </div>
+
+      <div class="button-group">
+        <div class="pokeball-button" id="find-button">
+          <div class="pokeball">
+            <div class="upper-half"></div>
+            <div class="lower-half"></div>
+            <div class="base"></div>
+            <div class="inner-circle"></div>
+            <div class="indicator"></div>
+            <div class="indicator-inner"></div>
+          </div>
+          <span>Encontrar</span>
+        </div>
+
+        <div class="pokeball-button" id="reset-button">
+          <div class="pokeball">
+            <div class="upper-half"></div>
+            <div class="lower-half"></div>
+            <div class="base"></div>
+            <div class="inner-circle"></div>
+            <div class="indicator"></div>
+            <div class="indicator-inner"></div>
+          </div>
+          <span>Retornar</span>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <label>Resultado:</label>
+        <div id="result-output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
